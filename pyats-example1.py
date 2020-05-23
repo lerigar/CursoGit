@@ -51,7 +51,7 @@ vagrant_iosxe1_interfaces.learn()
 vagrant_iosxe1_interfaces.info
 
 # Display a single interface from the device
-vagrant_iosxe1_interfaces.info["1"]
+vagrant_iosxe1_interfaces.info["GigabitEthernet2"]
 
 # Print the mac address for the interface
 vagrant_iosxe1_interfaces.info["GigabitEthernet1"]["mac_address"]
@@ -65,7 +65,7 @@ print(vagrant_iosxe1.execute("show version"))
 version = vagrant_iosxe1.execute("show version")
 
 # Send a configuration command to the
-vagrant_iosxe1.configure("ntp server 10.10.10.11")
+vagrant_iosxe1.configure("ntp server 10.10.10.10")
 
 # Create a configuration command list and send to the device
 config_loopback = [
